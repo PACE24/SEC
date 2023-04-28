@@ -1,0 +1,18 @@
+program tax_slab
+implicit none
+real :: tax,income
+print*,"Enter taxable income :"
+read*,income
+    if (income <= 300000.00) then
+        tax = 0.00
+    else if (income <= 600000.00) then
+        tax = 0.05*(income-300000.00) 
+    else if (income <= 900000.00) then  
+        tax = 15000.00+0.10*(income-600000.00)
+    else 
+        tax = 45000.00+0.15*(income-900000.00)
+    end if
+    
+    print*,"your tax to pay is ",tax
+end program tax_slab
+
