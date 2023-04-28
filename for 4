@@ -1,0 +1,19 @@
+Program Random_variable_expression 
+implicit none
+real :: T,a,b,L
+a=15.2 
+b=10.2 
+L=1.2 
+print *, "here a=15.2 b=10.2 and L=1.2"
+T=0.0092*2*a*((log10((4*a*a)/b)-log10(a*sqrt(2-L)))+0.004*(a*(a*sqrt(2-L))+0.45*b))
+print*,"value of T is ",T
+End Program Random_variable_expression
+
+
+Program Random_variable_expression 
+real :: a,b,c,d,e,f,x,y,ans
+print *, "write value of a,b,c,d,e,f,x,y in that order"
+read *, a,b,c,d,e,f,x,y
+ans=((a*x+b)/c)+((d*y+e)/(2*f))-(a/(b*d))
+print *, "your answer is ",ans
+End Program Random_variable_expression
