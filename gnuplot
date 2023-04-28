@@ -10,3 +10,8 @@ set xtics scale 2
 set grid
 plot tan(x)
 set encoding utf8
+
+set xlabel 'x'
+set ylabel 'x^2'
+set title 'plot of x^2 from -10 to 10'
+plot x**2
