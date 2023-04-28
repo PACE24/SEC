@@ -1,0 +1,32 @@
+Program change_of_coordinates 
+implicit none
+real :: r,th,x,y
+print *, "enter x,y coordiantes in that order"
+read *, x,y 
+r=sqrt((x*x)+(y*y))
+th=atan(y/x)
+print*,"as per new coordiantes, r=",r,"and theta =",th
+End Program change_of_coordinates
+
+
+Program hello
+implicit none
+real :: a,b,c,s,area
+print *, "Enter side lengths a,b,c in that order"
+read *, a,b,c
+s=(a+b+c)/2
+area=sqrt(s*(s-a)*(s-b)*(s-c))
+print *,"area of the triangle is : ",area
+End Program hello
+
+
+Program hello
+implicit none
+real :: area, radius, circumference
+print *, "Enter the radius of the circle (in cm) : "
+read *, radius
+area = 3.14159*radius*radius
+circumference = 2.0*3.14159*radius
+print *,"the area of the circle is :",area,"sq cm"
+print *,"the circumference of the circle is :",circumference,"cm"
+End Program hello
